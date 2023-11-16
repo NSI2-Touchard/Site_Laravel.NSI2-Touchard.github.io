@@ -1,54 +1,65 @@
 :root{
-    --wave-color-4: #b9b9b97e;
-    --wave-color-3: #9292929d;
-    --wave-color-2: #696969d7;
-    --wave-color: #303030;
-    --space-waves-infos: 150px;
+  --wave-color-4: #b9b9b97e;
+  --wave-color-3: #9292929d;
+  --wave-color-2: #696969d7;
+  --wave-color: #303030;
+  --space-waves-infos: 150px;
 }
 
 body, html{
-    margin: 0;
-    padding: 0;
-    background-color: #303030;
+  margin: 0;
+  padding: 0;
+  background-color: #303030;
 }
 
 .main{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding-top: 150px;
-    padding-bottom: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: white;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+}
+
+.icon-cube{
+  background: linear-gradient(144deg, rgb(204, 57, 57) 0%, rgb(109, 75, 69) 35%, rgb(105, 36, 36) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .navbar{
-    box-shadow: 1px 1px 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white!important;
+  --bs-navbar-padding-y: 0rem;
+  width: 100%;
+  z-index: 1;
 }
 
 .title span{
-    background: linear-gradient(144deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(144deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Wave */
 .waves{
-    width: 100%;
-    height: 160px;
+  width: 100%;
+  height: 160px;
 }
 .waves-top{
-    position: relative;
-    bottom: var(--space-waves-infos);
+  position: relative;
+  bottom: var(--space-waves-infos);
 }
 
 .waves-bottom{
-    position: relative;
-    top: var(--space-waves-infos);
+  position: relative;
+  top: var(--space-waves-infos);
 }
 
 .parallax > use {
